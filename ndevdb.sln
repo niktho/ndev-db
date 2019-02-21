@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ndevdb", "ndevdb.sqlproj", "{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF4A3AB-1A1B-48A6-A74E-339838BCCCCB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ACE1103-71A5-4BFB-8726-EB59DDEB429F}
+	EndGlobalSection
+EndGlobal
