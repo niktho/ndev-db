@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [CustomerTests].[test Given customer is created When Customer has a middle name Then save the @MiddleName]
+﻿CREATE PROCEDURE [testCustomer].[test Given customer is created When Customer has a middle name Then save the @MiddleName]
 AS 
 BEGIN
 

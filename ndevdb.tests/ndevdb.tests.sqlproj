@@ -58,7 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="test-classes" />
-    <Folder Include="test-classes\CustomerTests" />
+    <Folder Include="test-classes\testCustomer" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac">
@@ -88,10 +88,10 @@
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
-    <Build Include="test-classes\CustomerTests\CustomerTests.sql" />
+    <Build Include="test-classes\testCustomer\testCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="test-classes\CustomerTests\test Given customer is created When Customer has a middle name Then save the @MiddleName.sql" />
+    <Build Include="test-classes\testCustomer\test Given customer is created When Customer has a middle name Then save the @MiddleName.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="run_tests.sql" />
