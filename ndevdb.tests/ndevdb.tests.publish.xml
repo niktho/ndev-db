@@ -4,12 +4,15 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>ndevdb_ci</TargetDatabaseName>
     <DeployScriptFileName>ndevdb.tests.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=ndev.database.windows.net;Persist Security Info=False;User ID=nikolai.k.thomassen@avanade.com;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;Authentication="Active Directory Interactive"</TargetConnectionString>
+    <TargetConnectionString>
+    </TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <DropObjectsNotInSource>True</DropObjectsNotInSource>
   </PropertyGroup>
   <ItemGroup>
     <SqlCmdVariable Include="IsLocalDevelopment">
-      <Value>true</Value>
+      <Value>false</Value>
     </SqlCmdVariable>
   </ItemGroup>
 </Project>
