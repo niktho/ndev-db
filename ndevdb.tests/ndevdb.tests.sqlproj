@@ -59,6 +59,7 @@
     <Folder Include="Properties" />
     <Folder Include="test-classes" />
     <Folder Include="test-classes\testCustomer" />
+    <Folder Include="test-classes\testOrderDetails" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac">
@@ -89,6 +90,8 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="test-classes\testCustomer\testCustomer.sql" />
+    <Build Include="test-classes\testOrderDetails\testOrderDetails.sql" />
+    <Build Include="test-classes\testOrderDetails\test Given customer is viewing price When customer selects currency Then the converted price must be displayed.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="test-classes\testCustomer\test Given customer is created When Customer has a middle name Then save the @MiddleName.sql" />
@@ -98,5 +101,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ndevdb.tests.publish.xml" />
+    <None Include="localhost.runsettings" />
+    <Build Include="test-classes\testOrderDetails\test Given customer is creating a order When customer add comments Then save @OrderDetails.sql" />
+    <Build Include="test-classes\testOrderDetails\test Given customer is managing orders When customer is viewing order history Then OrderId must be displayed.sql" />
   </ItemGroup>
 </Project>

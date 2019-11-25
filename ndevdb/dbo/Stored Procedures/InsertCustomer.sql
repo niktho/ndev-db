@@ -10,6 +10,8 @@ AS
 BEGIN
 SET NOCOUNT ON;
 
+INSERT INTO dbo.Customer (FirstName, MiddleName, LastName, Age)
+VALUES ( @FirstName, @MiddleName, @LastName, @Age)
 
 SET NOCOUNT OFF;
 END
