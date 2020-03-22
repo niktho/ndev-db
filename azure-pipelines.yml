@@ -15,3 +15,8 @@ stages:
           displayName: 'Build solution ndevdb.sln'
           inputs:
             solution: '**\*.sln'
+        - task: PublishPipelineArtifact@1
+          inputs:
+            targetPath: '$(Pipeline.Workspace)'
+            artifact: 'database-build'
+            publishLocation: 'pipeline'
