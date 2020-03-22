@@ -17,6 +17,6 @@ stages:
             solution: '**\*.sln'
         - task: PublishPipelineArtifact@1
           inputs:
-            targetPath: '$(Pipeline.Workspace)'
+            targetPath: '$(Pipeline.Workspace)/s'
             artifact: 'database-build'
             publishLocation: 'pipeline'
