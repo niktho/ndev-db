@@ -15,7 +15,6 @@ stages:
           displayName: 'Build solution ndevdb.sln'
           inputs:
             solution: '**\*.sln'
-        steps:
         - task: CopyFiles@2
           inputs:
             SourceFolder: '$(Pipeline.Workspace)/s'
