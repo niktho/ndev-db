@@ -65,8 +65,9 @@ stages:
             unzip ./downloads/sqlpackage-linux-x64-en-US-15.0.4630.1.zip -d ./sqlpackage
             chmod a+x ./sqlpackage/sqlpackage
 
-            ./sqlpackage/sqlpackage
+            sleep 15s
+            ./sqlpackage/sqlpackage /Action:Publish /SourceFile:"ndevdb.tests.dacpac" /TargetDatabaseName:ndevdb /TargetServerName:"cidb"
 
-            ls -a
+            
 
 
