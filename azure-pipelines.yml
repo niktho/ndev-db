@@ -53,7 +53,7 @@ stages:
         - task: DownloadPipelineArtifact@2
           inputs:
             buildType: 'current'
-            artifactName: 'datbase-build'
+            artifactName: 'database-build'
             targetPath: '$(Pipeline.Workspace)'
         - script: |
             mkdir sqlpackage
