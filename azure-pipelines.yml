@@ -66,7 +66,7 @@ stages:
             chmod a+x ./sqlpackage/sqlpackage
 
             sleep 15s
-            ./sqlpackage/sqlpackage /Action:Publish /SourceFile:"./ndevdb.tests.dacpac" /TargetDatabaseName:ndevdb /TargetServerName:"cidb"
+            ./sqlpackage/sqlpackage /Action:Publish /SourceFile:"$(Pipeline.Workspace)/ndevdb.tests.dacpac" /TargetDatabaseName:ndevdb /TargetServerName:"cidb"
 
             
 
