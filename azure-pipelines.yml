@@ -7,8 +7,11 @@ pr:
 stages:
   - stage: build
     jobs:
-    - job: 'BuildAndPublushArtifact'
+    - job: 'BuildAndPublishArtifact'
       pool:
         vmImage: 'windows-latest'
       steps:
-      - script: echo hello from windows.
+        - task: VSBuild@1
+          displayName: 'Build solution ndevdb.sln'
+          inputs:
+          solution: ndevdb.sln
