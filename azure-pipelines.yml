@@ -14,4 +14,4 @@ stages:
         - task: VSBuild@1
           displayName: 'Build solution ndevdb.sln'
           inputs:
-          solution: ndevdb.sln
+            solution: '**\*.sln'
