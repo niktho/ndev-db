@@ -4,6 +4,16 @@ trigger:
 pr:
   - master
 
+resources:
+  containers:
+    - container: cidb
+      image: mcr.microsoft.com/mssql/server:2019-latest
+      env:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "Test2019.!"
+      ports: 
+      - 1433:1433
+
 stages:
   - stage: build
     jobs:
@@ -31,10 +41,12 @@ stages:
             artifact: 'database-build'
             publishLocation: 'pipeline'
   
-  - stage: test
+  - stage: test    
     jobs:
     - job: 'RunUnitTests'
+      services:
+        cidb : cidb
       pool:
-        vmImage: 'ubuntu-18.04'
+        vmImage: 'ubuntu-18.04'      
       steps:
         - script: echo hello from ubuntu
