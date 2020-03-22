@@ -30,3 +30,9 @@ stages:
             targetPath: '$(build.artifactstagingdirectory)'
             artifact: 'database-build'
             publishLocation: 'pipeline'
+
+    - job: 'RunUnitTests'
+      pool:
+        vmImage: 'ubuntu-18.04'
+      steps:
+        - script: echo hello from ubuntu
