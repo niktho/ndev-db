@@ -51,5 +51,7 @@ stages:
         vmImage: 'ubuntu-18.04'
       steps:
         - script: |
-            sqlpackage
-            sleep 15s
+            mkdir sqlpackage
+            cd ./sqlpackage
+            wget https://download.microsoft.com/download/d/e/b/deb7b081-a3dc-47ea-8f2a-48cd8e486036/sqlpackage-linux-x64-en-US-15.0.4630.1.zip
+            ls -a
