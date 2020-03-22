@@ -50,6 +50,11 @@ stages:
       pool:
         vmImage: 'ubuntu-18.04'
       steps:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'datbase-build'
+            targetPath: '$(Pipeline.Workspace)'
         - script: |
             mkdir sqlpackage
             mkdir downloads
@@ -59,6 +64,9 @@ stages:
 
             unzip ./downloads/sqlpackage-linux-x64-en-US-15.0.4630.1.zip -d ./sqlpackage
             chmod a+x ./sqlpackage/sqlpackage
-            
+
             ./sqlpackage/sqlpackage
+
+            ls -a
+
 
