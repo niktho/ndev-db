@@ -1,0 +1,14 @@
+trigger:
+  - master
+
+pr:
+  - master
+
+stages:
+  - stage: build
+    jobs:
+    - job: 'BuildAndPublushArtifact'
+      pool:
+        vmImage: 'windows-latest'
+      steps:
+      - script: echo hello from windows.
