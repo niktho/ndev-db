@@ -41,12 +41,15 @@ stages:
             artifact: 'database-build'
             publishLocation: 'pipeline'
   
-  - stage: test    
+  - stage: test
+    dependsOn: build
     jobs:
     - job: 'RunUnitTests'
       services:
         cidb : cidb
       pool:
-        vmImage: 'ubuntu-18.04'      
+        vmImage: 'ubuntu-18.04'
       steps:
-        - script: echo hello from ubuntu
+        - script: |
+            sqlpackage
+            sleep 15s
