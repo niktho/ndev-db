@@ -45,6 +45,7 @@ stages:
     # dependsOn: build
     # jobs:
     - job: 'RunUnitTests'
+      dependsOn: 'BuildAndPublishArtifact'
       services:
         cidb : cidb
       pool:
