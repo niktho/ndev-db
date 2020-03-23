@@ -41,9 +41,9 @@ stages:
             artifact: 'database-build'
             publishLocation: 'pipeline'
   
-  - stage: test
-    dependsOn: build
-    jobs:
+  # - stage: test
+    # dependsOn: build
+    # jobs:
     - job: 'RunUnitTests'
       services:
         cidb : cidb
